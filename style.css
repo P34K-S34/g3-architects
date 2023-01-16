@@ -1,19 +1,442 @@
-/* box-shadow: 0px 9px 30px rgba(255, 149, 5, 0.3); */
+@import url('https://fonts.googleapis.com/css2?family=Poppins&family=Work+Sans:wght@400;500;600;700&display=swap');
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+    font-family: 'Work Sans', sans-serif;
+}
+.primary-btn{
+    padding: 15px 20px;
+    color: #ffffff;
+    background-color: #FF900E;
+    border: 1px solid transparent;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 18px;
+    transition: all 0.4s ease;
+}
+.primary-btn:hover{
+    background-color: transparent;
+    color: #FF900E;
+    border: 1px solid #FF900E;
+}
+
+
+
+
+#header{
+    background-color: #FF900E1A;
+    width: 100%;
+}
+
+
+#header .logo-nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 50px 80px;
+}
+#header .logo-nav a{
+    text-decoration: none;
+}
+
+
+#header .header-logo h2{
+    font-size: 30px;
+    color: #131313;
+}
+
+
+#header .header-nav ul{
+    display: flex;
+    list-style-type: none;
+}
+#header .header-nav a{
+    font-size: 18px;
+    padding: 10px 30px;
+    color: #424242;
+    border-radius: 20px;
+    transition: all 0.3s ease;
+}
+#header .header-nav a:hover{
+    background-color: antiquewhite;
+}
 
 
 
 
 
+#header .header-banner{
+    display: block;
+    padding: 50px 80px 30px 80px;
+    text-align: center;
+}
+
+#header .header-banner .banner-tittle{
+    font-size: 64px;
+    line-height: 75px;
+    color: #131313;
+    margin-bottom: 32px;
+}
+#header .header-banner .banner-description{
+    font-size: 16px;
+    line-height: 26px;
+    color: #727272;
+    margin-bottom: 32px;
+}
+#header .header-banner img{
+    width: 100%;
+    margin-top: 50px;
+}
 
 
 
 
+#main {
+    width: 100%;
+}
+#main .quick-view{
+    display: flex;
+    gap: 70px;
+    align-items: center;
+    padding: 60px 100px;
+    margin-bottom: 100px;
+}
+#main .quick-view .teams{
+    display: grid;
+    gap: 24px;
+    grid-template-columns: repeat(2, 1fr);
+}
+#main .quick-view .teams img{
+    width: 250px;
+    height: 250px;
+}
+#main .quick-view .intro-tittle::before{
+    content: "Quick list ";
+    color: #727272;
+    font-size: 40px;
+}
+#main .quick-view .intro-tittle{
+    font-size: 40px;
+    line-height: 53px;
+}
+#main .quick-view span{
+    color: #FF900E;
+}
+#main .feature-intro .intro-subtittle{
+    margin: 24px 0 32px 0;
+    color: #727272;
+    font-size: 16px;
+    line-height: 28px;
+}
+
+
+#main .features{
+    display: flex;
+    align-items: center;
+    gap:  80px;
+    padding: 0 80px;
+    margin-bottom: 130px;
+}
+#main .feature-side{
+    width: 60%;
+}
+#main .features  .feature-heading{
+    font-size: 50px;
+    line-height: 53px;
+    color: rgb(19, 19, 19);
+    padding-left: 20px;
+    border-left: 5px solid rgb(255, 144, 14);
+    margin-bottom: 20px;
+}
+#main .features .feature-details{
+    font-size: 16px;
+    line-height: 26px;
+    color: #727272;
+    margin-bottom: 25px;
+}
+
+
+#main .features .feature{
+    background-color: #FFFFFF;
+    padding: 20px;
+    margin-bottom: 20px;
+    border-radius: 8px;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+}
+
+
+#main .features .feature .feature-tittle{
+    font-size: 20px;
+    color: #131313d8;
+}
+#main .features .feature .feature-subtittle{
+    font-size: 16px;
+    line-height: 24px;
+    color: #727272;
+    margin-top: 10px;
+}
+
+
+#main .features .feature-img-side {
+    position: relative;
+    width: 100%;
+    max-width: 460px;
+}
+
+#main .features .feature-img-side img {
+    width: 100%;
+}
+        
+#main .features .feature-img-side button{
+    position: absolute;
+    top: 97%;
+    left: 0%;
+    transform: translate(-30%, -45%);
+    color: #ffffff;
+    background-color: #FF900E;
+    padding: 45px 42px;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+    text-align: center;
+}
+#main .features .feature-img-side .span1{
+    font-size: 35px;
+}
+#main .features .feature-img-side .span2{
+    font-size: 20px;
+}
+
+
+#main .facts{
+    padding: 0 60px;
+}
+#main .facts .facts-heading{
+    font-size: 45px;
+    color: #131313;
+    margin-bottom: 16px;
+}
+#main .facts .facts-details{
+    font-size: 16px;
+    line-height: 26px;
+    color: #727272;
+    width: 60%;
+}
+#main .facts .fact-container{
+    margin: 60px 0 140px 0;
+    display: flex;
+    justify-content: space-evenly;
+}
+#main .facts .fact{
+    text-align: center;
+    padding: 45px 35px;
+    transition: all 0.3s ease;
+    cursor: pointer;
+    border: 1px solid #FF900E;
+    border-radius: 8px;
+}
+#main .facts .fact:hover{
+    box-shadow: 
+    rgba(240, 156, 46, 0.8) -5px 5px,
+    rgba(240, 156, 46, 0.6) -10px 10px,
+    rgba(240, 156, 46, 0.4) -15px 15px,
+    rgba(240, 156, 46, 0.2) -20px 20px,
+    rgba(240, 156, 46, 0.1) -25px 25px;
+}
+#main .facts .fact img{
+    width: 45px;
+    height: 45px;
+}
+
+
+
+#main .sponsors-details{
+    margin: 0 auto;
+}
+
+#main .sponsors .sponsors-tittle{
+    font-size: 45px;
+    color: #131313;
+    margin-bottom: 25px;
+    text-align: center;
+}
+#main .sponsors-details{
+    font-size: 16px;
+    line-height: 26px;
+    color: #727272;
+    text-align: center;
+    width: 50%;
+    margin-bottom: 50px;
+}
+
+#main .sponsors .sponsor-list{
+    display: flex;
+    justify-content: space-evenly;
+    margin-bottom: 100px;
+}
+#main .sponsors .sponsor img{
+    filter: grayscale(100%);
+    transition: all 0.3s ease;
+    width: 80%;
+}
+#main .sponsors .sponsor img:hover{
+    filter: none;
+}
+
+
+
+#footer{
+    padding: 20px 80px;
+    background-color: #FFF4E7;
+}
+#footer .footer-wraper{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+
+#footer .social{
+    list-style-type: none;
+    display: flex;
+    gap: 20px;
+}
+#footer .social img{
+    width: 32px;
+}
+
+
+#footer .contact-form{
+    display: flex;
+    gap: 5px;
+    align-items: center;
+}
+
+#footer .contact-form input{
+    padding-left: 10px;
+    width: 200px;
+    height: 45px;
+    border: 1px solid #FFF4E7;
+}
 
 
 
 
+#footer .copyrights{
+    margin-top: 50px;
+    text-align: center;
+}
+
+
+/* For portrait/straight devices */
+@media screen and (max-width: 575.99px){
+
+    #header .logo-nav{
+        display: block;
+        padding: 10px;
+    }
+    #header .header-logo{
+        text-align: center;
+    }
+    #header .header-nav ul{
+        margin-top: 20px;
+        display: block;
+        text-align: center;
+    }
+    #header .header-nav li{
+        margin-top: 20px;
+    }
+
+
+    #header .header-banner{
+        padding: 30px;
+    }
+    #header .header-banner .banner-tittle{
+        font-size: 30px;
+        line-height: 35px;
+    }
 
 
 
+    #main .quick-view{
+        display: block;
+        padding: 0;
+    }
+    #main .quick-view .teams{
+        display: block;
+        margin-top: 50px;
+    }
+    #main .quick-view .teams img{
+        width: 70%;
+        height: 60%;
+        display: block;
+        margin: 0 auto;
+        margin-bottom: 30px;
+    }
+    #main .quick-view .feature-intro{
+        text-align: center;
+        padding: 30px;
+    }
 
 
+    #main .features{
+        display: block;
+    }
+    #main .feature-side{
+        width: 100%;
+    }
+
+
+
+    #main .facts .facts-details{
+        width: 100%;
+    }
+    #main .facts .fact-container{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 30px;
+    }
+
+    #main .sponsors .sponsors-details{
+        width: 50%;
+        display: block;
+    }
+    #main .sponsors .sponsor-list{
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+      }
+      
+    #main .sponsors .sponsor {
+        width: 20%;
+        margin-top: 15px;
+      }
+
+
+    #footer{
+        padding: 20px;
+    }
+    #footer .footer-wraper{
+        display: block;
+    }
+    #footer .social-media{
+        margin-bottom: 20px;
+    }
+
+
+    #footer .contact-form{
+        display: block;
+    }
+    #footer .contact-form input, textarea, button{
+        margin-top: 10px;
+    }
+
+    #footer .copyrights{
+        width: 60%;
+    }
+
+
+}
